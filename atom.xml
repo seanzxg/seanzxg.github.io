@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rainmar.com/"/>
-  <updated>2019-11-06T06:23:09.105Z</updated>
+  <updated>2019-11-06T11:48:31.103Z</updated>
   <id>http://rainmar.com/</id>
   
   <author>
@@ -17,20 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客搭建实录</title>
-    <link href="http://rainmar.com/ck2myghqz0002h5xi0e9y5xnb/"/>
-    <id>http://rainmar.com/ck2myghqz0002h5xi0e9y5xnb/</id>
+    <title>Hexo博客搭建</title>
+    <link href="http://rainmar.com/ck2n8dhku0001smxi01zl9785/"/>
+    <id>http://rainmar.com/ck2n8dhku0001smxi01zl9785/</id>
     <published>2019-11-06T06:17:06.000Z</published>
-    <updated>2019-11-06T06:23:09.105Z</updated>
+    <updated>2019-11-06T11:48:31.103Z</updated>
     
-    <content type="html"><![CDATA[<p>小光博客实录</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><h4 id="为何是Hexo？"><a href="#为何是Hexo？" class="headerlink" title="为何是Hexo？"></a>为何是Hexo？</h4><p>我简单搜了一下博客框架，大概看了几种，作为一个前端，我选择了Hexo</p><ol><li>支持Markdown</li><li>轻量级，不需要后台或者数据库</li><li>一键部署，不需要配置太多的环境，而且跟前端工作相近，打包，生成静态文件等</li><li>插件挺多，虽然还没咋用</li><li>找到了我喜欢的主题</li><li>基于node.js，熟悉感</li></ol><p>More info: <a href="https://hexo.io/zh-cn" target="_blank" rel="noopener">Hexo Doc</a></p><h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><p>一台电脑，最好是linux系统或者mac os系统</p><p>一台服务器，本人是ubuntu18</p><h5 id="电脑环境"><a href="#电脑环境" class="headerlink" title="电脑环境"></a>电脑环境</h5><p><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js</a>（安装稳定版即可 如果你有意境有了node环境，确保自己的版本不低于8.6即可）</p><p><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">Git</a></p><p>tip：如果某些原因需要多版本node，安装<a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">nvm</a>进行版本控制</p><h5 id="服务器环境"><a href="#服务器环境" class="headerlink" title="服务器环境"></a>服务器环境</h5><ol><li>确保外网可访问</li><li>Nginx</li><li>Git</li></ol><h4 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h4><h5 id="1-安装Hexo-Cli"><a href="#1-安装Hexo-Cli" class="headerlink" title="1.安装Hexo Cli"></a>1.安装Hexo Cli</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h5 id="2-构建博客项目"><a href="#2-构建博客项目" class="headerlink" title="2.构建博客项目"></a>2.构建博客项目</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p><code>hexo init &lt;folder&gt;</code> 执行过程是把 <a href="https://github.com/hexojs/hexo-starter.git" target="_blank" rel="noopener">hexo-starter</a> 把项目克隆到<code>folder</code>目录下，顺带把<a href="https://github.com/hexojs/hexo-theme-landscape.git" target="_blank" rel="noopener">landscape</a>主题克隆到<code>theme/</code>目录,最后把相关的git的都删掉。给你一个初始化的项目</p><p><code>npm install</code> <code>npm</code>相关的操作请查阅<a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm文档</a></p><p>tip: 我们在用别人的主题的时候，那么你会把相关主题克隆到<code>theme</code>目录下，导致项目中有其他项目git，则无法提交。以submodule方式提交，因为你修改了__config配置文件，也是无法提交。结果就只有删除掉你克隆的主题<code>.git</code>文件。如果有方案保持其他项目的git管理，又能改动主题的配置文件，同时能提交到自己的仓库，请指教</p><h5 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h5>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;小光博客实录&lt;/p&gt;
-
+        &lt;h3 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;headerlink&quot; title=&quot;开始&quot;&gt;&lt;/a&gt;开始&lt;/h3&gt;&lt;h4 id=&quot;为何是Hexo？&quot;&gt;&lt;a href=&quot;#为何是Hexo？&quot; class=&quot;headerlink&quot; title=&quot;为何是Hexo？&quot;
       
     
     </summary>
@@ -45,8 +44,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://rainmar.com/ck2myghqu0000h5xi0o02eqjs/"/>
-    <id>http://rainmar.com/ck2myghqu0000h5xi0o02eqjs/</id>
+    <link href="http://rainmar.com/ck2n8dhkx0003smxi1n0u7d00/"/>
+    <id>http://rainmar.com/ck2n8dhkx0003smxi1n0u7d00/</id>
     <published>2019-11-05T08:40:27.730Z</published>
     <updated>2019-11-06T06:24:23.882Z</updated>
     
