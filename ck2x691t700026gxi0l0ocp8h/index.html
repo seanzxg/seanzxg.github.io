@@ -18,18 +18,18 @@
   
   
   <title>Hexo博客-服务器部署 | Sean</title>
-  <meta name="description" content="开始通过上一期Hexo博客-搭建,能够构建一个完整 可运行博客的项目，配置相关参数，构建生成静态文件。 本期讲如何把项目构建并部署到服务器 部署1.环境安装nginx git 博主的服务器是ubuntu 1$ apt install nginx git -y  2.创建git环境① 以root用户登录123456$ sudo adduser git$ su git$ cd$ mkdir .ssh">
+  <meta name="description" content="开始通过上一期Hexo博客-搭建,能够构建一个完整 可运行博客的项目，配置相关参数，构建生成静态文件。 本期讲如何把项目构建并部署到服务器上 流程总览服务器环境安装-&amp;gt;创建git用户-&amp;gt;博客git hook-&amp;gt;nginx配置-&amp;gt;hexo deploy 部署1.环境安装nginx git 博主的服务器是ubuntu 1$ apt install nginx git -y  2">
 <meta name="keywords" content="服务器,博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客-服务器部署">
-<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ck2u3nod500023ixiggw2dzz0&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ck2x691t700026gxi0l0ocp8h&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="开始通过上一期Hexo博客-搭建,能够构建一个完整 可运行博客的项目，配置相关参数，构建生成静态文件。 本期讲如何把项目构建并部署到服务器 部署1.环境安装nginx git 博主的服务器是ubuntu 1$ apt install nginx git -y  2.创建git环境① 以root用户登录123456$ sudo adduser git$ su git$ cd$ mkdir .ssh">
+<meta property="og:description" content="开始通过上一期Hexo博客-搭建,能够构建一个完整 可运行博客的项目，配置相关参数，构建生成静态文件。 本期讲如何把项目构建并部署到服务器上 流程总览服务器环境安装-&amp;gt;创建git用户-&amp;gt;博客git hook-&amp;gt;nginx配置-&amp;gt;hexo deploy 部署1.环境安装nginx git 博主的服务器是ubuntu 1$ apt install nginx git -y  2">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-09T05:46:34.732Z">
+<meta property="og:updated_time" content="2019-11-13T10:57:01.356Z">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://rainmar.com/ck2u3nod500023ixiggw2dzz0/index.html">
+  <link rel="canonical" href="http://rainmar.com/ck2x691t700026gxi0l0ocp8h/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -203,7 +203,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -222,7 +222,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/ck2u3nod500023ixiggw2dzz0/" class="title">Hexo博客-服务器部署</a>
+                <a href="/ck2x691t200006gxi2odc0ql6/" class="title">Hexo博客-搭建</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-06T06:17:06.000Z" itemprop="datePublished">2019-11-06</time>
@@ -237,25 +237,10 @@
                 
               </p>
               <p class="item-title">
-                <a href="/ck2u3nod700043ixi2499h819/" class="title">Hexo博客-搭建</a>
+                <a href="/ck2x691t700026gxi0l0ocp8h/" class="title">Hexo博客-服务器部署</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-06T06:17:06.000Z" itemprop="datePublished">2019-11-06</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/ck2u3nocy00003ixiazq417n0/" class="title">Hello World</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2019-11-05T08:40:27.730Z" itemprop="datePublished">2019-11-05</time>
               </p>
             </div>
           </li>
@@ -275,7 +260,7 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#开始"><span class="toc-number">1.</span> <span class="toc-text">开始</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署"><span class="toc-number">2.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-环境安装"><span class="toc-number">2.1.</span> <span class="toc-text">1.环境安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-创建git环境"><span class="toc-number">2.2.</span> <span class="toc-text">2.创建git环境</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①-以root用户登录"><span class="toc-number">2.2.1.</span> <span class="toc-text">① 以root用户登录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②-把-SSH-公钥添加到authorized-keys文件中"><span class="toc-number">2.2.2.</span> <span class="toc-text">② 把 SSH 公钥添加到authorized_keys文件中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#③-创建git仓库目录-配置git-hooks"><span class="toc-number">2.2.3.</span> <span class="toc-text">③ 创建git仓库目录 配置git hooks</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#④改变blog-git的目录拥有者权限"><span class="toc-number">2.2.4.</span> <span class="toc-text">④改变blog.git的目录拥有者权限</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#⑤-创建博客静态文件目录"><span class="toc-number">2.3.</span> <span class="toc-text">⑤ 创建博客静态文件目录</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#⑥-调试一下是否部署成功"><span class="toc-number">2.3.1.</span> <span class="toc-text">⑥ 调试一下是否部署成功</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献、文档"><span class="toc-number">3.</span> <span class="toc-text">参考文献、文档</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#开始"><span class="toc-number">1.</span> <span class="toc-text">开始</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#流程总览"><span class="toc-number">1.1.</span> <span class="toc-text">流程总览</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署"><span class="toc-number">2.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-环境安装"><span class="toc-number">2.1.</span> <span class="toc-text">1.环境安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-创建git环境"><span class="toc-number">2.2.</span> <span class="toc-text">2.创建git环境</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①-以root用户登录"><span class="toc-number">2.2.1.</span> <span class="toc-text">① 以root用户登录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②-把-SSH-公钥添加到authorized-keys文件中"><span class="toc-number">2.2.2.</span> <span class="toc-text">② 把 SSH 公钥添加到authorized_keys文件中</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-创建git仓库目录-配置git-hooks"><span class="toc-number">2.3.</span> <span class="toc-text">3. 创建git仓库目录 配置git hooks</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①创建一个名为blog的git裸仓库"><span class="toc-number">2.3.1.</span> <span class="toc-text">①创建一个名为blog的git裸仓库</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②创建-hook-钩子函数"><span class="toc-number">2.3.2.</span> <span class="toc-text">②创建 hook 钩子函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#③输入了内容如下"><span class="toc-number">2.3.3.</span> <span class="toc-text">③输入了内容如下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#④改变blog-git的目录拥有者权限"><span class="toc-number">2.3.4.</span> <span class="toc-text">④改变blog.git的目录拥有者权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#⑤-创建博客静态文件目录"><span class="toc-number">2.3.5.</span> <span class="toc-text">⑤ 创建博客静态文件目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#⑥-调试一下是否部署成功"><span class="toc-number">2.3.6.</span> <span class="toc-text">⑥ 调试一下是否部署成功</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-服务器nginx配置"><span class="toc-number">2.4.</span> <span class="toc-text">4. 服务器nginx配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#①-域名配置"><span class="toc-number">2.4.1.</span> <span class="toc-text">① 域名配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#②nginx配置"><span class="toc-number">2.4.2.</span> <span class="toc-text">②nginx配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#③-重启nginx"><span class="toc-number">2.4.3.</span> <span class="toc-text">③ 重启nginx</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-hexo-deploy"><span class="toc-number">2.5.</span> <span class="toc-text">5.hexo deploy</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文献、文档"><span class="toc-number">3.</span> <span class="toc-text">参考文献、文档</span></a></li></ol>
     </nav>
   </div>
 </aside>
@@ -297,7 +282,7 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/ck2u3nod500023ixiggw2dzz0/" class="article-date">
+	<a href="/ck2x691t700026gxi0l0ocp8h/" class="article-date">
 	  <time datetime="2019-11-06T06:17:06.000Z" itemprop="datePublished">2019-11-06</time>
 	</a>
 </span>
@@ -311,10 +296,10 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ck2u3nod500023ixiggw2dzz0/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ck2x691t700026gxi0l0ocp8h/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 395(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 693(字)</span>
 	
 	
 
@@ -323,7 +308,8 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><p>通过上一期<a href="http://rainmar.com/ck2qzveds000661xih8wmgl5g/">Hexo博客-搭建</a>,能够构建一个<code>完整</code> <code>可运行</code>博客的项目，配置相关参数，构建生成静态文件。</p>
-<p>本期讲如何把项目构建并部署到服务器</p>
+<p>本期讲如何把项目构建并部署到服务器上</p>
+<h4 id="流程总览"><a href="#流程总览" class="headerlink" title="流程总览"></a>流程总览</h4><p>服务器环境安装-&gt;创建git用户-&gt;博客git hook-&gt;nginx配置-&gt;hexo deploy</p>
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><h4 id="1-环境安装"><a href="#1-环境安装" class="headerlink" title="1.环境安装"></a>1.环境安装</h4><p><code>nginx</code> <code>git</code></p>
 <p>博主的服务器是ubuntu</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt install nginx git -y</span><br></pre></td></tr></table></figure>
@@ -339,18 +325,38 @@
 <p>服务器执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /path/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
 
-<h5 id="③-创建git仓库目录-配置git-hooks"><a href="#③-创建git仓库目录-配置git-hooks" class="headerlink" title="③ 创建git仓库目录 配置git hooks"></a>③ 创建git仓库目录 配置<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="noopener">git hooks</a></h5><p>创建一个名为blog的git裸仓库</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir /path/to/repo</span><br><span class="line">$ cd /path/to/repo</span><br><span class="line">$ git init --bare blog.git</span><br></pre></td></tr></table></figure>
+<p>为了安全考虑，需要禁止掉git用户shell登录，参考 <a href="https://git-scm.com/book/zh/v2/服务器上的-Git-配置服务器" target="_blank" rel="noopener">git服务器配置</a></p>
+<h4 id="3-创建git仓库目录-配置git-hooks"><a href="#3-创建git仓库目录-配置git-hooks" class="headerlink" title="3. 创建git仓库目录 配置git hooks"></a>3. 创建git仓库目录 配置<a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90" target="_blank" rel="noopener">git hooks</a></h4><h5 id="①创建一个名为blog的git裸仓库"><a href="#①创建一个名为blog的git裸仓库" class="headerlink" title="①创建一个名为blog的git裸仓库"></a>①创建一个名为blog的git裸仓库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir /path/to/repo</span><br><span class="line">$ cd /path/to/repo</span><br><span class="line">$ git init --bare blog.git</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /var/repo/blog.git/hooks/post-receive</span><br></pre></td></tr></table></figure>
+<h5 id="②创建-hook-钩子函数"><a href="#②创建-hook-钩子函数" class="headerlink" title="②创建 hook 钩子函数"></a>②创建 hook 钩子函数</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /var/repo/blog.git/hooks/post-receive</span><br></pre></td></tr></table></figure>
 
-<p>添加内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">$ git --work-tree=/path/to/blog/ --git-dir=/path/to/repo/blog.git checkout -f</span><br></pre></td></tr></table></figure>
-<h5 id="④改变blog-git的目录拥有者权限"><a href="#④改变blog-git的目录拥有者权限" class="headerlink" title="④改变blog.git的目录拥有者权限"></a>④改变blog.git的目录拥有者权限</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chown -R git:git blog.git</span><br></pre></td></tr></table></figure>
+<h5 id="③输入了内容如下"><a href="#③输入了内容如下" class="headerlink" title="③输入了内容如下"></a>③输入了内容如下</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git --work-tree=/path/to/blog/ --git-dir=/path/to/repo/blog.git checkout -f</span></span><br></pre></td></tr></table></figure>
+<h5 id="④改变blog-git的目录拥有者权限"><a href="#④改变blog-git的目录拥有者权限" class="headerlink" title="④改变blog.git的目录拥有者权限"></a>④改变blog.git的目录拥有者权限</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> chown -R git:git blog.git</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="⑤-创建博客静态文件目录"><a href="#⑤-创建博客静态文件目录" class="headerlink" title="⑤ 创建博客静态文件目录"></a>⑤ 创建博客静态文件目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir /path/to/blog/</span><br><span class="line">chown -R git:git /path/to/blog/</span><br><span class="line">chmod -R 755 /path/to/blog/</span><br></pre></td></tr></table></figure>
+<h5 id="⑤-创建博客静态文件目录"><a href="#⑤-创建博客静态文件目录" class="headerlink" title="⑤ 创建博客静态文件目录"></a>⑤ 创建博客静态文件目录</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir /path/to/blog/</span><br><span class="line">chown -R git:git /path/to/blog/</span><br><span class="line">chmod -R 755 /path/to/blog/</span><br></pre></td></tr></table></figure>
 
-<h5 id="⑥-调试一下是否部署成功"><a href="#⑥-调试一下是否部署成功" class="headerlink" title="⑥ 调试一下是否部署成功"></a>⑥ 调试一下是否部署成功</h5><h3 id="参考文献、文档"><a href="#参考文献、文档" class="headerlink" title="参考文献、文档"></a>参考文献、文档</h3><p><a href="https://blog.csdn.net/sinat_34349564/article/details/52442526" target="_blank" rel="noopener">git仓库和项目源码分离</a><br><a href="https://blog.csdn.net/sinat_34349564/article/details/52487860" target="_blank" rel="noopener">git init 和 git init –bare</a></p>
+<h5 id="⑥-调试一下是否部署成功"><a href="#⑥-调试一下是否部署成功" class="headerlink" title="⑥ 调试一下是否部署成功"></a>⑥ 调试一下是否部署成功</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@服务器ip:/path/to/repo/blog.git</span><br></pre></td></tr></table></figure>
+
+<p>如果克隆到当前文件中一个空的blog文件，那么你的blog配置就成功了。</p>
+<h4 id="4-服务器nginx配置"><a href="#4-服务器nginx配置" class="headerlink" title="4. 服务器nginx配置"></a>4. 服务器nginx配置</h4><h5 id="①-域名配置"><a href="#①-域名配置" class="headerlink" title="① 域名配置"></a>① 域名配置</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/site-available/rainmar.com</span><br></pre></td></tr></table></figure>
+
+<p>rainmar.com是我的域名，并做好了ip和域名映射。 如果你没有域名或者本地调试，默认是default</p>
+<h5 id="②nginx配置"><a href="#②nginx配置" class="headerlink" title="②nginx配置"></a>②nginx配置</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen 80;</span><br><span class="line">        listen [::]:80;</span><br><span class="line">        server_name rainmar.com www.rainmar.com;</span><br><span class="line">        index index.html;</span><br><span class="line">        location / &#123;</span><br><span class="line">                alias /data/projects/blog/;</span><br><span class="line">                index  index.html;</span><br><span class="line">                try_files $uri $uri/ /index.html =404;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="③-重启nginx"><a href="#③-重启nginx" class="headerlink" title="③ 重启nginx"></a>③ 重启nginx</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/nginx restart</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="5-hexo-deploy"><a href="#5-hexo-deploy" class="headerlink" title="5.hexo deploy"></a>5.hexo deploy</h4><p>① 打开博客项目根目录下<code>_config.yml</code>文件,配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@ip或域名:/path/to/blog.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+
+
+<p>②打开package.json文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;build&quot;: &quot;hexo generate&quot;,</span><br><span class="line">    &quot;clean&quot;: &quot;hexo clean&quot;,</span><br><span class="line">    &quot;deploy&quot;: &quot;hexo deploy&quot;,</span><br><span class="line">    &quot;server&quot;: &quot;hexo server&quot;,</span><br><span class="line">    &quot;c&quot;: &quot;npm run clean &amp; npm run build &amp; npm run deploy&quot;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>npm run c</code> 一键部署</p>
+<h3 id="参考文献、文档"><a href="#参考文献、文档" class="headerlink" title="参考文献、文档"></a>参考文献、文档</h3><p><a href="https://blog.csdn.net/sinat_34349564/article/details/52442526" target="_blank" rel="noopener">git仓库和项目源码分离</a><br><a href="https://blog.csdn.net/sinat_34349564/article/details/52487860" target="_blank" rel="noopener">git init 和 git init –bare</a></p>
 
       
     </div>
@@ -360,7 +366,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://rainmar.com/ck2u3nod500023ixiggw2dzz0/" title="Hexo博客-服务器部署" target="_blank" rel="external">http://rainmar.com/ck2u3nod500023ixiggw2dzz0/</a>
+      <a href="http://rainmar.com/ck2x691t700026gxi0l0ocp8h/" title="Hexo博客-服务器部署" target="_blank" rel="external">http://rainmar.com/ck2x691t700026gxi0l0ocp8h/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -409,10 +415,10 @@
   
   <ul class="pager pull-left">
     
-    
-    <li class="next">
-      <a href="/ck2u3nod700043ixi2499h819/" title="Hexo博客-搭建"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    <li class="prev">
+      <a href="/ck2x691t200006gxi2odc0ql6/" title="Hexo博客-搭建"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
+    
     
     
     <li class="toggle-toc">
