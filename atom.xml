@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rainmar.com/"/>
-  <updated>2019-12-23T08:22:49.204Z</updated>
+  <updated>2020-01-19T06:01:10.500Z</updated>
   <id>http://rainmar.com/</id>
   
   <author>
@@ -17,9 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>微信网页调整字体大小导致页面错乱</title>
+    <link href="http://rainmar.com/ck5km8yyw0005dsxi4gxghewt/"/>
+    <id>http://rainmar.com/ck5km8yyw0005dsxi4gxghewt/</id>
+    <published>2020-01-19T05:56:46.000Z</published>
+    <updated>2020-01-19T06:01:10.500Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="解决问题原理："><a href="#解决问题原理：" class="headerlink" title="解决问题原理："></a>解决问题原理：</h4><p>阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。</p><h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h4><h5 id="ios"><a href="#ios" class="headerlink" title="ios"></a>ios</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-text-size-adjust</span>: <span class="number">100%</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="android"><a href="#android" class="headerlink" title="android"></a>android</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge == <span class="string">"object"</span> &amp;&amp; <span class="keyword">typeof</span> WeixinJSBridge.invoke == <span class="string">"function"</span>) &#123;</span><br><span class="line">        handleFontSize();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">document</span>.addEventListener(<span class="string">"WeixinJSBridgeReady"</span>, handleFontSize, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">handleFontSize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 设置网页字体为默认大小</span></span><br><span class="line">        WeixinJSBridge.invoke(<span class="string">'setFontSizeCallback'</span>, &#123; <span class="string">'fontSize'</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        <span class="comment">// 重写设置网页字体大小的事件</span></span><br><span class="line">        WeixinJSBridge.on(<span class="string">'menu:setfont'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            WeixinJSBridge.invoke(<span class="string">'setFontSizeCallback'</span>, &#123; <span class="string">'fontSize'</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;解决问题原理：&quot;&gt;&lt;a href=&quot;#解决问题原理：&quot; class=&quot;headerlink&quot; title=&quot;解决问题原理：&quot;&gt;&lt;/a&gt;解决问题原理：&lt;/h4&gt;&lt;p&gt;阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。&lt;/p&gt;
+&lt;h4 id=&quot;解决：&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="记录" scheme="http://rainmar.com/categories/%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="微信" scheme="http://rainmar.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="问题" scheme="http://rainmar.com/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>nodejs中require的加载规则</title>
-    <link href="http://rainmar.com/ck4i6e5c20005pnxiegcu46m4/"/>
-    <id>http://rainmar.com/ck4i6e5c20005pnxiegcu46m4/</id>
+    <link href="http://rainmar.com/ck5km8yz00009dsxic8df9hp3/"/>
+    <id>http://rainmar.com/ck5km8yz00009dsxic8df9hp3/</id>
     <published>2019-12-23T07:39:16.000Z</published>
     <updated>2019-12-23T08:22:49.204Z</updated>
     
@@ -46,10 +75,10 @@
   
   <entry>
     <title>搭建一个自己的npm仓库</title>
-    <link href="http://rainmar.com/ck4i6e5c40007pnxi440j86iz/"/>
-    <id>http://rainmar.com/ck4i6e5c40007pnxi440j86iz/</id>
+    <link href="http://rainmar.com/ck5km8yz2000cdsxi61805n6i/"/>
+    <id>http://rainmar.com/ck5km8yz2000cdsxi61805n6i/</id>
     <published>2019-11-21T08:32:42.000Z</published>
-    <updated>2019-11-28T12:02:05.991Z</updated>
+    <updated>2020-01-03T02:55:17.216Z</updated>
     
     <content type="html"><![CDATA[<h4 id="全局安装verdaccio"><a href="#全局安装verdaccio" class="headerlink" title="全局安装verdaccio"></a>全局安装<code>verdaccio</code></h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm  install –g verdaccio</span><br></pre></td></tr></table></figure><h4 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">verdaccio</span><br><span class="line">// 执行后如下</span><br><span class="line">    warn --- config file  - /Users/sean/.config/verdaccio/config.yaml</span><br><span class="line">    warn --- Verdaccio started</span><br><span class="line">    warn --- Plugin successfully loaded: verdaccio-htpasswd</span><br><span class="line">    warn --- Plugin successfully loaded: verdaccio-audit</span><br><span class="line">    warn --- http address - http://localhost:4873/ - verdaccio/4.3.4</span><br></pre></td></tr></table></figure><p><code>Ctrl+c</code>停止执行</p><p>配置文件：当前用户根路径下<code>.config/verdaccio/config.yaml</code></p><h4 id="安装pm2-进程管理器"><a href="#安装pm2-进程管理器" class="headerlink" title="安装pm2 (进程管理器)"></a>安装pm2 (进程管理器)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm  install –g pm2</span><br></pre></td></tr></table></figure><h4 id="进程管理启动"><a href="#进程管理启动" class="headerlink" title="进程管理启动"></a>进程管理启动</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start verdaccio</span><br></pre></td></tr></table></figure><h4 id="配置nginx反向代理"><a href="#配置nginx反向代理" class="headerlink" title="配置nginx反向代理"></a>配置nginx反向代理</h4><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">  <span class="attribute">server_name</span> npm.rainmar.com;</span><br><span class="line">  <span class="attribute">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span>              http://127.0.0.1:4873/;</span><br><span class="line">    <span class="attribute">proxy_set_header</span>        Host <span class="variable">$host</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id=""><a href="#" class="headerlink" title=""></a></h4><ol><li><p>centos的nginx配置文件在<code>/etc/nginx/conf.d/</code>,新建配置文件</p></li><li><p>ubuntu的nginx配置文件在<code>/etc/nginx/sites-available</code>，</p><ol><li>创建npm.rainmar.com配置文件，</li><li>贴入上图配置</li><li><code>ln -sfv /etc/nginx/sites-available/npm.rainmar.com /etc/nginx/sites-enabled/npm.rainmar.com</code></li></ol></li></ol><h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>可以在浏览器访问 <a href="npm.rainmar.com">npm.rainmar.com</a></p>]]></content>
     
@@ -72,8 +101,8 @@
   
   <entry>
     <title>Vue Bus</title>
-    <link href="http://rainmar.com/ck4i6e5c10004pnxi88pc0zrp/"/>
-    <id>http://rainmar.com/ck4i6e5c10004pnxi88pc0zrp/</id>
+    <link href="http://rainmar.com/ck5km8yyy0007dsxib5ju7xc2/"/>
+    <id>http://rainmar.com/ck5km8yyy0007dsxib5ju7xc2/</id>
     <published>2019-11-14T11:21:19.000Z</published>
     <updated>2019-11-28T12:02:33.487Z</updated>
     
@@ -98,18 +127,18 @@
   
   <entry>
     <title>收集</title>
-    <link href="http://rainmar.com/ck4i6e5c7000apnxi0b28fcju/"/>
-    <id>http://rainmar.com/ck4i6e5c7000apnxi0b28fcju/</id>
+    <link href="http://rainmar.com/ck5km8yz3000ddsxihedhb855/"/>
+    <id>http://rainmar.com/ck5km8yz3000ddsxihedhb855/</id>
     <published>2019-11-14T08:19:21.000Z</published>
-    <updated>2019-11-28T12:19:03.640Z</updated>
+    <updated>2020-01-03T03:02:41.206Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h3><h4 id="layout-布局"><a href="#layout-布局" class="headerlink" title="layout 布局"></a>layout 布局</h4><p><a href="https://github.com/shershen08/vue-masonry" target="_blank" rel="noopener">vue-masonry</a> - 瀑布流，不限制卡片宽高，指令方式</p><h4 id="Event-事件"><a href="#Event-事件" class="headerlink" title="Event 事件"></a>Event 事件</h4><p><a href="https://github.com/scaccogatto/vue-waypoint" target="_blank" rel="noopener">vue-waypoint</a> - 滚动事件监听,可以做滚动异步加载</p><p><a href="https://github.com/simplesmiler/vue-clickaway" target="_blank" rel="noopener">vue-clickaway</a> - 获取本元素以外的点击事件</p><h4 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h4><p><a href="https://surmon.me/" target="_blank" rel="noopener">surmon 一个nuxt项目</a></p><h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p><a href="http://www.ayqy.net/doc/css2-1/cover.html" target="_blank" rel="noopener">css2.1中文文档</a></p><h3 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h3><p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">ECMAScript 6 入门</a></p><p><a href="https://javascript.ruanyifeng.com/" target="_blank" rel="noopener">Javascript 参考-阮一峰</a></p><p><a href="https://javascript.ruanyifeng.com/nodejs/develop.html" target="_blank" rel="noopener">node 参考-阮一峰</a></p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="https://github.com/randyrants/sharpkeys/" target="_blank" rel="noopener">sharpkeys</a> - windows键位修改</p><h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><p><a href="https://github.com/qinyuhang/ShadowsocksX-NG-R" target="_blank" rel="noopener">ShadowsocksX-NG-R</a></p>]]></content>
+    <content type="html"><![CDATA[<h4 id="前端框架"><a href="#前端框架" class="headerlink" title="前端框架"></a>前端框架</h4><p><a href="https://github.com/shershen08/vue-masonry" target="_blank" rel="noopener">vue-masonry</a> - 瀑布流，不限制卡片宽高，指令方式</p><p><a href="https://github.com/scaccogatto/vue-waypoint" target="_blank" rel="noopener">vue-waypoint</a> - 滚动事件监听,可以做滚动异步加载</p><p><a href="https://github.com/simplesmiler/vue-clickaway" target="_blank" rel="noopener">vue-clickaway</a> - 获取本元素以外的点击事件</p><p><a href="https://surmon.me/" target="_blank" rel="noopener">surmon </a>          - </p><h4 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h4><p><a href="http://www.ayqy.net/doc/css2-1/cover.html" target="_blank" rel="noopener">css2.1中文文档</a></p><h4 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h4><p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">ECMAScript 6 入门</a></p><p><a href="https://javascript.ruanyifeng.com/" target="_blank" rel="noopener">Javascript 参考-阮一峰</a></p><p><a href="https://javascript.ruanyifeng.com/nodejs/develop.html" target="_blank" rel="noopener">node 参考-阮一峰</a></p><h4 id="工具-软件"><a href="#工具-软件" class="headerlink" title="工具/软件"></a>工具/软件</h4><p><a href="https://github.com/randyrants/sharpkeys/" target="_blank" rel="noopener">sharpkeys</a> - windows键位修改</p><p><a href="https://juejin.im/post/5ddbdc10e51d4523425db17f" target="_blank" rel="noopener">程序员工具集</a> - 一位掘金up主的工具集</p><p><a href="https://github.com/qinyuhang/ShadowsocksX-NG-R" target="_blank" rel="noopener">ShadowsocksX-NG-R</a> - ssr</p><h4 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h4><p><a href="http://www.wangchao.info/1549.html" target="_blank" rel="noopener">ShadowsocksR(SSR)一键安装脚本</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h3&gt;&lt;h4 id=&quot;layout-布局&quot;&gt;&lt;a href=&quot;#layout-布局&quot; class=&quot;headerlink&quot; title=&quot;lay
+        &lt;h4 id=&quot;前端框架&quot;&gt;&lt;a href=&quot;#前端框架&quot; class=&quot;headerlink&quot; title=&quot;前端框架&quot;&gt;&lt;/a&gt;前端框架&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/shershen08/vue-masonry&quot; target=&quot;_b
       
     
     </summary>
@@ -124,8 +153,8 @@
   
   <entry>
     <title>Hexo博客-搭建</title>
-    <link href="http://rainmar.com/ck4i6e5br0000pnxigaslhnxa/"/>
-    <id>http://rainmar.com/ck4i6e5br0000pnxigaslhnxa/</id>
+    <link href="http://rainmar.com/ck5km8yym0000dsxi17bi0ix8/"/>
+    <id>http://rainmar.com/ck5km8yym0000dsxi17bi0ix8/</id>
     <published>2019-11-06T06:17:06.000Z</published>
     <updated>2019-12-08T02:44:48.506Z</updated>
     
@@ -148,8 +177,8 @@
   
   <entry>
     <title>Hexo博客-服务器部署</title>
-    <link href="http://rainmar.com/ck4i6e5bx0002pnxi82gd7q17/"/>
-    <id>http://rainmar.com/ck4i6e5bx0002pnxi82gd7q17/</id>
+    <link href="http://rainmar.com/ck5km8yys0002dsxi2t4yce5p/"/>
+    <id>http://rainmar.com/ck5km8yys0002dsxi2t4yce5p/</id>
     <published>2019-11-06T06:17:06.000Z</published>
     <updated>2019-11-28T12:02:46.789Z</updated>
     
