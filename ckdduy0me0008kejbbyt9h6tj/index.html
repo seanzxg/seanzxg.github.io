@@ -17,19 +17,19 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>搭建一个自己的npm仓库 | Sean</title>
-  <meta name="description" content="全局安装verdaccio1npm  install –g verdaccio  执行1234567verdaccio&#x2F;&#x2F; 执行后如下    warn --- config file  - &#x2F;Users&#x2F;sean&#x2F;.config&#x2F;verdaccio&#x2F;config.yaml    warn --- Verdaccio started    warn --- Plugin successfully l">
-<meta name="keywords" content="linux">
+  <title>nodejs中require的加载规则 | Sean</title>
+  <meta name="description" content="require方法的加载规则 优先从缓存中加载 核心模块 路径形式的模块 第三方模块  1.有线从缓存中加载测试例子 12345678910111213141516171819&#x2F;&#x2F; a.jsconsole.log(&amp;apos;A load&amp;apos;)&#x2F;&#x2F; b.jsconsole.log(&amp;apos;B load&amp;apos;)require(&amp;apos;.&#x2F;a&amp;apos;)&#x2F;&#x2F; index1.jsrequire(&amp;apos;.&#x2F;a&amp;apos;)require(&amp;apos;.&#x2F;b&amp;apos;)&#x2F;&#x2F;">
+<meta name="keywords" content="nodejs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建一个自己的npm仓库">
-<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ck5kmabtl000bfsxi0jgmejtf&#x2F;index.html">
+<meta property="og:title" content="nodejs中require的加载规则">
+<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ckdduy0me0008kejbbyt9h6tj&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="全局安装verdaccio1npm  install –g verdaccio  执行1234567verdaccio&#x2F;&#x2F; 执行后如下    warn --- config file  - &#x2F;Users&#x2F;sean&#x2F;.config&#x2F;verdaccio&#x2F;config.yaml    warn --- Verdaccio started    warn --- Plugin successfully l">
+<meta property="og:description" content="require方法的加载规则 优先从缓存中加载 核心模块 路径形式的模块 第三方模块  1.有线从缓存中加载测试例子 12345678910111213141516171819&#x2F;&#x2F; a.jsconsole.log(&amp;apos;A load&amp;apos;)&#x2F;&#x2F; b.jsconsole.log(&amp;apos;B load&amp;apos;)require(&amp;apos;.&#x2F;a&amp;apos;)&#x2F;&#x2F; index1.jsrequire(&amp;apos;.&#x2F;a&amp;apos;)require(&amp;apos;.&#x2F;b&amp;apos;)&#x2F;&#x2F;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-03T02:55:17.216Z">
+<meta property="og:updated_time" content="2020-04-08T09:09:02.089Z">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://rainmar.com/ck5kmabtl000bfsxi0jgmejtf/index.html">
+  <link rel="canonical" href="http://rainmar.com/ckdduy0me0008kejbbyt9h6tj/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -181,7 +181,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a><span class="category-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -191,7 +191,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vue/" rel="tag">Vue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%AE%E9%A2%98/" rel="tag">问题</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vue/" rel="tag">Vue</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">服务器</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%97%AE%E9%A2%98/" rel="tag">问题</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -201,7 +201,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/Vue/" style="font-size: 13px;">Vue</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/nodejs/" style="font-size: 13px;">nodejs</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px;">博客</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 13px;">工具</a> <a href="/tags/%E5%BE%AE%E4%BF%A1/" style="font-size: 13px;">微信</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 13px;">服务器</a> <a href="/tags/%E9%97%AE%E9%A2%98/" style="font-size: 13px;">问题</a>
+      <a href="/tags/Vue/" style="font-size: 13px;">Vue</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/nodejs/" style="font-size: 13px;">nodejs</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px;">博客</a> <a href="/tags/%E5%BE%AE%E4%BF%A1/" style="font-size: 13px;">微信</a> <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 13px;">服务器</a> <a href="/tags/%E9%97%AE%E9%A2%98/" style="font-size: 13px;">问题</a>
     </div>
   </div>
 
@@ -210,7 +210,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -229,7 +229,7 @@
                 <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
               </p>
               <p class="item-title">
-                <a href="/ck5kmabtj0008fsxiazvo0zwe/" class="title">微信网页调整字体大小导致页面错乱</a>
+                <a href="/ckdduy0mf0009kejb3z2ldc44/" class="title">微信网页调整字体大小导致页面错乱</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-01-19T05:56:46.000Z" itemprop="datePublished">2020-01-19</time>
@@ -244,7 +244,7 @@
                 <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
               </p>
               <p class="item-title">
-                <a href="/ck5kmabth0006fsxi88xw9zul/" class="title">nodejs中require的加载规则</a>
+                <a href="/ckdduy0me0008kejbbyt9h6tj/" class="title">nodejs中require的加载规则</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-12-23T07:39:16.000Z" itemprop="datePublished">2019-12-23</time>
@@ -259,7 +259,7 @@
                 <a class="category-link" href="/categories/linux/">linux</a>
               </p>
               <p class="item-title">
-                <a href="/ck5kmabtl000bfsxi0jgmejtf/" class="title">搭建一个自己的npm仓库</a>
+                <a href="/ckdduy0mg000ckejb3qzha2ci/" class="title">搭建一个自己的npm仓库</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-21T08:32:42.000Z" itemprop="datePublished">2019-11-21</time>
@@ -274,7 +274,7 @@
                 <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
               </p>
               <p class="item-title">
-                <a href="/ck5kmabtf0005fsxie3s2fiy3/" class="title">Vue Bus</a>
+                <a href="/ckdduy0m80002kejb3vrmblq8/" class="title">Vue Bus</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-14T11:21:19.000Z" itemprop="datePublished">2019-11-14</time>
@@ -286,13 +286,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
+                
               </p>
               <p class="item-title">
-                <a href="/ck5kmabtm000cfsxigl3b4kze/" class="title">收集</a>
+                <a href="/ckdduy0m30000kejb4b9q8zbl/" class="title">Hexo博客-搭建</a>
               </p>
               <p class="item-date">
-                <time datetime="2019-11-14T08:19:21.000Z" itemprop="datePublished">2019-11-14</time>
+                <time datetime="2019-11-06T06:17:06.000Z" itemprop="datePublished">2019-11-06</time>
               </p>
             </div>
           </li>
@@ -312,21 +312,21 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#全局安装verdaccio"><span class="toc-number">1.</span> <span class="toc-text">全局安装verdaccio</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#执行"><span class="toc-number">2.</span> <span class="toc-text">执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装pm2-进程管理器"><span class="toc-number">3.</span> <span class="toc-text">安装pm2 (进程管理器)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#进程管理启动"><span class="toc-number">4.</span> <span class="toc-text">进程管理启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置nginx反向代理"><span class="toc-number">5.</span> <span class="toc-text">配置nginx反向代理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-number">6.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#最后"><span class="toc-number">7.</span> <span class="toc-text">最后</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#require方法的加载规则"><span class="toc-number">1.</span> <span class="toc-text">require方法的加载规则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-有线从缓存中加载"><span class="toc-number">1.1.</span> <span class="toc-text">1.有线从缓存中加载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-核心模块"><span class="toc-number">1.2.</span> <span class="toc-text">2.核心模块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-路径模块"><span class="toc-number">1.3.</span> <span class="toc-text">3.路径模块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-第三方模块"><span class="toc-number">1.4.</span> <span class="toc-text">4.第三方模块</span></a></li></ol></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-搭建一个自己的npm仓库" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-nodejs中require的加载规则" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      搭建一个自己的npm仓库
+      nodejs中require的加载规则
     </h1>
   
 
@@ -334,29 +334,29 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/ck5kmabtl000bfsxi0jgmejtf/" class="article-date">
-	  <time datetime="2019-11-21T08:32:42.000Z" itemprop="datePublished">2019-11-21</time>
+	<a href="/ckdduy0me0008kejbbyt9h6tj/" class="article-date">
+	  <time datetime="2019-12-23T07:39:16.000Z" itemprop="datePublished">2019-12-23</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/linux/">linux</a>
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/linux/" rel="tag">linux</a>
+	<a class="article-tag-link" href="/tags/nodejs/" rel="tag">nodejs</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ck5kmabtl000bfsxi0jgmejtf/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ckdduy0me0008kejbbyt9h6tj/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 193(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 569(字)</span>
 	
 	
 
@@ -364,30 +364,46 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h4 id="全局安装verdaccio"><a href="#全局安装verdaccio" class="headerlink" title="全局安装verdaccio"></a>全局安装<code>verdaccio</code></h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm  install –g verdaccio</span><br></pre></td></tr></table></figure>
+        <h3 id="require方法的加载规则"><a href="#require方法的加载规则" class="headerlink" title="require方法的加载规则"></a>require方法的加载规则</h3><ol>
+<li>优先从缓存中加载</li>
+<li>核心模块</li>
+<li>路径形式的模块</li>
+<li>第三方模块</li>
+</ol>
+<h4 id="1-有线从缓存中加载"><a href="#1-有线从缓存中加载" class="headerlink" title="1.有线从缓存中加载"></a>1.有线从缓存中加载</h4><p>测试例子</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// a.js</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'A load'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// b.js</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'B load'</span>)</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./a'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// index1.js</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./a'</span>)</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./b'</span>)</span><br><span class="line"><span class="comment">// A load</span></span><br><span class="line"><span class="comment">// B load</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// index2.js</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./b'</span>)</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./a'</span>)</span><br><span class="line"><span class="comment">// B load</span></span><br><span class="line"><span class="comment">// A load</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">verdaccio</span><br><span class="line">// 执行后如下</span><br><span class="line">    warn --- config file  - /Users/sean/.config/verdaccio/config.yaml</span><br><span class="line">    warn --- Verdaccio started</span><br><span class="line">    warn --- Plugin successfully loaded: verdaccio-htpasswd</span><br><span class="line">    warn --- Plugin successfully loaded: verdaccio-audit</span><br><span class="line">    warn --- http address - http://localhost:4873/ - verdaccio/4.3.4</span><br></pre></td></tr></table></figure>
+<p>可以看出： index1.js加载a，然后加载b.js，而此时b中a已经在index1.js被加载，并没有打印两次A load。</p>
+<p>Index2.js加载了b，然后再加a，而输出先Bload 然后是a.js，而a没有输出。</p>
+<p>总结：当一个模块已经被加载后，会被存到require.cache中，从require.cache中根据传入的id,取出该对象的exports值，不会再次执行该模块代码</p>
+<h4 id="2-核心模块"><a href="#2-核心模块" class="headerlink" title="2.核心模块"></a>2.核心模块</h4><p><strong>核心模块的本质也是文件，核心模块文件已经被编译到了二进制文件中了，我们只需要按照名字来加载就可以了</strong></p>
+<p>例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">'fs'</span>)</span><br><span class="line"><span class="built_in">require</span>(<span class="string">'http'</span>)</span><br></pre></td></tr></table></figure>
 
-<p><code>Ctrl+c</code>停止执行</p>
-<p>配置文件：当前用户根路径下<code>.config/verdaccio/config.yaml</code></p>
-<h4 id="安装pm2-进程管理器"><a href="#安装pm2-进程管理器" class="headerlink" title="安装pm2 (进程管理器)"></a>安装pm2 (进程管理器)</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm  install –g pm2</span><br></pre></td></tr></table></figure>
 
-<h4 id="进程管理启动"><a href="#进程管理启动" class="headerlink" title="进程管理启动"></a>进程管理启动</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start verdaccio</span><br></pre></td></tr></table></figure>
 
-<h4 id="配置nginx反向代理"><a href="#配置nginx反向代理" class="headerlink" title="配置nginx反向代理"></a>配置nginx反向代理</h4><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">  <span class="attribute">server_name</span> npm.rainmar.com;</span><br><span class="line">  <span class="attribute">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span>              http://127.0.0.1:4873/;</span><br><span class="line">    <span class="attribute">proxy_set_header</span>        Host <span class="variable">$host</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-路径模块"><a href="#3-路径模块" class="headerlink" title="3.路径模块"></a>3.路径模块</h4><p>加载自己写的莫快递，以下是加载方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 相对路径</span><br><span class="line">var a = require(&apos;./a&apos;)</span><br><span class="line">// 相对路径</span><br><span class="line">var a = require(&apos;../a&apos;)</span><br><span class="line">// 根路径</span><br><span class="line">var a = require(&apos;/a&apos;)</span><br><span class="line">// 根路径</span><br><span class="line">var a = require(&apos;~/src/a&apos;)</span><br></pre></td></tr></table></figure>
 
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><ol>
-<li><p>centos的nginx配置文件在<code>/etc/nginx/conf.d/</code>,新建配置文件</p>
-</li>
-<li><p>ubuntu的nginx配置文件在<code>/etc/nginx/sites-available</code>，</p>
+
+
+<h4 id="4-第三方模块"><a href="#4-第三方模块" class="headerlink" title="4.第三方模块"></a>4.第三方模块</h4><ul>
+<li>第三方模块，通过<code>npm</code>安装到本地的<code>node_modules</code></li>
+<li>使用的时候，可以通过<code>require(&#39;包名&#39;)</code>的方式进行加载才可以使用</li>
+<li>第三方包和核心模块的名称不能一样</li>
+</ul>
+<p>var template = require(‘aaa’)</p>
 <ol>
-<li>创建npm.rainmar.com配置文件，</li>
-<li>贴入上图配置</li>
-<li><code>ln -sfv /etc/nginx/sites-available/npm.rainmar.com /etc/nginx/sites-enabled/npm.rainmar.com</code></li>
+<li>先找到当前文件所处目录中的 <code>node_modules</code> 目录</li>
+<li>然后根据以下方式找到文件中的 <code>main</code> 属性</li>
+<li>main 属性中就记录了 <code>aaa</code> 的入口模块</li>
+<li>然后加载使用这个第三方包，但是实际上最终加载的还是文件</li>
+<li>如果 package.json 文件不存在或者 main 指定的入口模块是也没有</li>
+<li>则 node 会自动找该目录下的 index.js，也就是说 index.js 会作为一个默认备选项</li>
+<li>如果以上所有任何一个条件都不成立，则会进入上一级目录中的 node_modules 目录查找</li>
+<li>如果上一级还没有，则继续往上上一级查找</li>
+<li>如果直到当前磁盘根目录还找不到，最后报错： can not find module aaa</li>
 </ol>
-</li>
-</ol>
-<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>可以在浏览器访问 <a href="npm.rainmar.com">npm.rainmar.com</a></p>
 
       
     </div>
@@ -397,7 +413,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://rainmar.com/ck5kmabtl000bfsxi0jgmejtf/" title="搭建一个自己的npm仓库" target="_blank" rel="external">http://rainmar.com/ck5kmabtl000bfsxi0jgmejtf/</a>
+      <a href="http://rainmar.com/ckdduy0me0008kejbbyt9h6tj/" title="nodejs中require的加载规则" target="_blank" rel="external">http://rainmar.com/ckdduy0me0008kejbbyt9h6tj/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -447,12 +463,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/ck5kmabth0006fsxi88xw9zul/" title="nodejs中require的加载规则"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/ckdduy0mf0009kejb3z2ldc44/" title="微信网页调整字体大小导致页面错乱"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/ck5kmabtf0005fsxie3s2fiy3/" title="Vue Bus"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/ckdduy0mg000ckejb3qzha2ci/" title="搭建一个自己的npm仓库"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
