@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html lang=zh>
+<html lang="zh">
 <head>
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no,email=no,adress=no">
   <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#000000">
   <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
+  <meta http-equiv="window-target" content="_top">
   
   
-  <title>微信网页调整字体大小导致页面错乱 | Sean</title>
-  <meta name="description" content="解决问题原理：阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。 解决：ios123body &amp;#123;    -webkit-text-size-adjust: 100% !important;&amp;#125;  android123456789101112131415(function() &amp;#123;    if (typeof WeixinJSBridge == &quot;object&quot;">
-<meta name="keywords" content="微信,问题">
+  <title>微信网页调整字体大小导致页面错乱 | 三月雨</title>
+  <meta name="description" content="解决问题原理：阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。 解决：ios123body &amp;#123;    -webkit-text-size-adjust: 100% !important;&amp;#125;  android123456789101112131415(function() &amp;#123;    if (typeof WeixinJSBridge &#x3D;&#x3D; &quot;ob">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信网页调整字体大小导致页面错乱">
-<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ckdoabecj000dn3jbbsz4c14b&#x2F;index.html">
+<meta property="og:url" content="rainmar.com/ckdpmt74j000juajbf62j10er.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="解决问题原理：阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。 解决：ios123body &amp;#123;    -webkit-text-size-adjust: 100% !important;&amp;#125;  android123456789101112131415(function() &amp;#123;    if (typeof WeixinJSBridge == &quot;object&quot;">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-06T15:04:39.156Z">
+<meta property="og:description" content="解决问题原理：阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。 解决：ios123body &amp;#123;    -webkit-text-size-adjust: 100% !important;&amp;#125;  android123456789101112131415(function() &amp;#123;    if (typeof WeixinJSBridge &#x3D;&#x3D; &quot;ob">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-19T05:56:46.000Z">
+<meta property="article:modified_time" content="2020-08-06T15:04:39.156Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="微信">
+<meta property="article:tag" content="问题">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://rainmar.com/ckdoabecj000dn3jbbsz4c14b/index.html">
+  <link rel="canonical" href="rainmar.com/ckdpmt74j000juajbf62j10er.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="http://cdn.rainmar.com/rp/rainmar-logo.png" type="image/x-icon">
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
   
   
   
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
   
-</head>
+<meta name="generator" content="Hexo 5.0.2"></head>
 
 
-<body class="main-center theme-purple" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center theme-blue" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/seanzxg" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        <a id="avatar" href="https://github.com/seanzxg" target="_blank" rel="external nofollow noopener noreferrer">
+          <img class="img-circle img-rotate" src="http://cdn.rainmar.com/rp/avatar.jpg?imageView2/0/w/100" width="200" height="200">
         </a>
-        <h2 id="name" class="hidden-xs hidden-sm">小光 Sean</h2>
+        <h2 id="name" class="hidden-xs hidden-sm">小光</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Father of XuanXuan</h3>
         <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Beijing, China</small>
       </div>
@@ -65,7 +70,7 @@
 
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
             </span>
@@ -75,7 +80,7 @@
   <div class="ins-search-mask"></div>
   <div class="ins-search-container">
     <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech>
       <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
     <div class="ins-section-wrapper">
@@ -137,6 +142,16 @@
         </li>
         
         
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
         <li class="menu-item menu-item-about">
           <a href="/about">
             
@@ -151,9 +166,11 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" rel="external nofollow noopener noreferrer"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss"><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
@@ -170,7 +187,7 @@
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>欢迎大家进行学习交流~</p>
+                <p>欢迎交流与分享经验!</p>
             </div>
         </div>
     </div>
@@ -229,7 +246,7 @@
                 <a class="category-link" href="/categories/git/">git</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabec50000n3jbbt0jbns6/" class="title">Git操作锦集</a>
+                <a href="/ckdpmt7470001uajb5zet0huo.html" class="title">Git操作锦集</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-08-06T15:14:08.083Z" itemprop="datePublished">2020-08-06</time>
@@ -244,7 +261,7 @@
                 <a class="category-link" href="/categories/git/">git</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecg0007n3jb3ynzc453/" class="title">git常用命令清单</a>
+                <a href="/ckdpmt74f000auajb6h336p7r.html" class="title">git常用命令清单</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-08-06T03:21:24.000Z" itemprop="datePublished">2020-08-06</time>
@@ -259,7 +276,7 @@
                 <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecj000dn3jbbsz4c14b/" class="title">微信网页调整字体大小导致页面错乱</a>
+                <a href="/ckdpmt74j000juajbf62j10er.html" class="title">微信网页调整字体大小导致页面错乱</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-01-19T05:56:46.000Z" itemprop="datePublished">2020-01-19</time>
@@ -274,7 +291,7 @@
                 <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabech000bn3jb3qaa4a9m/" class="title">nodejs中require的加载规则</a>
+                <a href="/ckdpmt74h000euajb9yfe5acz.html" class="title">nodejs中require的加载规则</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-12-23T07:39:16.000Z" itemprop="datePublished">2019-12-23</time>
@@ -289,7 +306,7 @@
                 <a class="category-link" href="/categories/linux/">linux</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecl000gn3jb6k4pfo0r/" class="title">搭建一个自己的npm仓库</a>
+                <a href="/ckdpmt74h000guajbcmkxbie1.html" class="title">搭建一个自己的npm仓库</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-21T08:32:42.000Z" itemprop="datePublished">2019-11-21</time>
@@ -312,7 +329,7 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#解决问题原理："><span class="toc-number">1.</span> <span class="toc-text">解决问题原理：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解决："><span class="toc-number">2.</span> <span class="toc-text">解决：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ios"><span class="toc-number">2.1.</span> <span class="toc-text">ios</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#android"><span class="toc-number">2.2.</span> <span class="toc-text">android</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">解决问题原理：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">解决：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ios"><span class="toc-number">2.1.</span> <span class="toc-text">ios</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#android"><span class="toc-number">2.2.</span> <span class="toc-text">android</span></a></li></ol></li></ol>
     </nav>
   </div>
 </aside>
@@ -334,7 +351,7 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/ckdoabecj000dn3jbbsz4c14b/" class="article-date">
+	<a href="/ckdpmt74j000juajbf62j10er.html" class="article-date">
 	  <time datetime="2020-01-19T05:56:46.000Z" itemprop="datePublished">2020-01-19</time>
 	</a>
 </span>
@@ -347,19 +364,14 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a>, <a class="article-tag-link" href="/tags/%E9%97%AE%E9%A2%98/" rel="tag">问题</a>
+	<a class="article-tag-link-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a>, <a class="article-tag-link-link" href="/tags/%E9%97%AE%E9%A2%98/" rel="tag">问题</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ckdoabecj000dn3jbbsz4c14b/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ckdpmt74j000juajbf62j10er.html#comments" class="article-comment-link">评论</a></span>
         
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 120(字)</span>
-	
-	
-
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
@@ -367,7 +379,7 @@
         <h4 id="解决问题原理："><a href="#解决问题原理：" class="headerlink" title="解决问题原理："></a>解决问题原理：</h4><p>阻止页面调整字体大小的事件，来达到避免字体变大导致页面的适配。</p>
 <h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h4><h5 id="ios"><a href="#ios" class="headerlink" title="ios"></a>ios</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-text-size-adjust</span>: <span class="number">100%</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="android"><a href="#android" class="headerlink" title="android"></a>android</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge == <span class="string">"object"</span> &amp;&amp; <span class="keyword">typeof</span> WeixinJSBridge.invoke == <span class="string">"function"</span>) &#123;</span><br><span class="line">        handleFontSize();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">document</span>.addEventListener(<span class="string">"WeixinJSBridgeReady"</span>, handleFontSize, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">handleFontSize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 设置网页字体为默认大小</span></span><br><span class="line">        WeixinJSBridge.invoke(<span class="string">'setFontSizeCallback'</span>, &#123; <span class="string">'fontSize'</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        <span class="comment">// 重写设置网页字体大小的事件</span></span><br><span class="line">        WeixinJSBridge.on(<span class="string">'menu:setfont'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            WeixinJSBridge.invoke(<span class="string">'setFontSizeCallback'</span>, &#123; <span class="string">'fontSize'</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<h5 id="android"><a href="#android" class="headerlink" title="android"></a>android</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge == <span class="string">&quot;object&quot;</span> &amp;&amp; <span class="keyword">typeof</span> WeixinJSBridge.invoke == <span class="string">&quot;function&quot;</span>) &#123;</span><br><span class="line">        handleFontSize();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">document</span>.addEventListener(<span class="string">&quot;WeixinJSBridgeReady&quot;</span>, handleFontSize, <span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">handleFontSize</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 设置网页字体为默认大小</span></span><br><span class="line">        WeixinJSBridge.invoke(<span class="string">&#x27;setFontSizeCallback&#x27;</span>, &#123; <span class="string">&#x27;fontSize&#x27;</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        <span class="comment">// 重写设置网页字体大小的事件</span></span><br><span class="line">        WeixinJSBridge.on(<span class="string">&#x27;menu:setfont&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            WeixinJSBridge.invoke(<span class="string">&#x27;setFontSizeCallback&#x27;</span>, &#123; <span class="string">&#x27;fontSize&#x27;</span> : <span class="number">0</span> &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
 
 
       
@@ -378,12 +390,11 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://rainmar.com/ckdoabecj000dn3jbbsz4c14b/" title="微信网页调整字体大小导致页面错乱" target="_blank" rel="external">http://rainmar.com/ckdoabecj000dn3jbbsz4c14b/</a>
+      <a href="rainmar.com/ckdpmt74j000juajbf62j10er.html" title="微信网页调整字体大小导致页面错乱" target="_blank" rel="external">rainmar.com/ckdpmt74j000juajbf62j10er.html</a>
     </li>
     
     <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh"
-        target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external nofollow noopener noreferrer">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
     </li>
   </ul>
 </blockquote>
@@ -393,20 +404,18 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="https://github.com/seanzxg" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg"
-            class="img-rounded w-full" alt="">
+        <a href="https://github.com/seanzxg" target="_blank" class="img-burn thumb-sm visible-lg" rel="external nofollow noopener noreferrer">
+          <img src="http://cdn.rainmar.com/rp/avatar.jpg?imageView2/0/w/100" class="img-rounded w-full" alt>
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/seanzxg" target="_blank"><span
-              class="text-dark">小光 Sean</span><small class="ml-1x">Web Developer &amp; Father of XuanXuan</small></a>
-        </h3>
+        <h3 class="media-heading"><a href="https://github.com/seanzxg" target="_blank" rel="external nofollow noopener noreferrer"><span class="text-dark">小光</span><small class="ml-1x">Web Developer &amp; Father of XuanXuan</small></a></h3>
         <div>保持初心，学习、成长、厚积、薄发。</div>
       </div>
     </figure>
   </div>
 </div>
+
 
     </div>
   </article>
@@ -428,12 +437,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/ckdoabecg0007n3jb3ynzc453/" title="git常用命令清单"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/ckdpmt74f000auajb6h336p7r.html" title="git常用命令清单"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/ckdoabech000bn3jb3qaa4a9m/" title="nodejs中require的加载规则"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/ckdpmt74h000euajb9yfe5acz.html" title="nodejs中require的加载规则"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -465,18 +474,18 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" rel="external nofollow noopener noreferrer"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss"><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
     <div class="copyright">
     	
-        &copy; 2020 John Doe
-        
         <div class="publishby">
-            
+        	Theme by <a href="https://github.com/cofess" target="_blank" rel="external nofollow noopener noreferrer"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="external nofollow noopener noreferrer">pure</a>.
         </div>
     </div>
 </footer>
@@ -484,8 +493,12 @@
 <script>
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
+
 <script src="/js/plugin.min.js"></script>
+
+
 <script src="/js/application.js"></script>
+
 
     <script>
 (function (window) {
@@ -503,7 +516,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
+
 <script src="/js/insight.js"></script>
+
 
 
 

@@ -1,64 +1,68 @@
 <!DOCTYPE html>
-<html lang=zh>
+<html lang="zh">
 <head>
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="renderer" content="webkit">
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no,email=no,adress=no">
   <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#000000">
   <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
-  <meta http-equiv="window-target" content="_top" />
+  <meta http-equiv="window-target" content="_top">
   
   
-  <title>git常用命令清单 | Sean</title>
+  <title>git常用命令清单 | 三月雨</title>
   <meta name="description" content="Git是每个程序员必备的日常用具。除了日常用的几个，还有些常用的总是记不住，做一下基本的整理。 脱离图形，无形装x，最为致命 基本名词  Working Directory：工作区 Stage Area：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库  Git配置1234567891011121314# Git 自带一个 git config 的工具来帮助设置控制 Gi">
-<meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git常用命令清单">
-<meta property="og:url" content="http:&#x2F;&#x2F;rainmar.com&#x2F;ckdoabecg0007n3jb3ynzc453&#x2F;index.html">
+<meta property="og:url" content="rainmar.com/ckdpmt74f000auajb6h336p7r.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Git是每个程序员必备的日常用具。除了日常用的几个，还有些常用的总是记不住，做一下基本的整理。 脱离图形，无形装x，最为致命 基本名词  Working Directory：工作区 Stage Area：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库  Git配置1234567891011121314# Git 自带一个 git config 的工具来帮助设置控制 Gi">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;cdn.rainmar.com&#x2F;rp&#x2F;4NfQa5.jpg?imageView2&#x2F;0&#x2F;w&#x2F;600">
-<meta property="og:updated_time" content="2020-08-10T08:34:05.297Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://cdn.rainmar.com/rp/4NfQa5.jpg?imageView2/0/w/600">
+<meta property="article:published_time" content="2020-08-06T03:21:24.000Z">
+<meta property="article:modified_time" content="2020-08-10T08:34:05.297Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;cdn.rainmar.com&#x2F;rp&#x2F;4NfQa5.jpg?imageView2&#x2F;0&#x2F;w&#x2F;600">
+<meta name="twitter:image" content="http://cdn.rainmar.com/rp/4NfQa5.jpg?imageView2/0/w/600">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://rainmar.com/ckdoabecg0007n3jb3ynzc453/index.html">
+  <link rel="canonical" href="rainmar.com/ckdpmt74f000auajb6h336p7r.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="http://cdn.rainmar.com/rp/rainmar-logo.png" type="image/x-icon">
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   
   
   
   
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
   
-</head>
+<meta name="generator" content="Hexo 5.0.2"></head>
 
 
-<body class="main-center theme-purple" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center theme-blue" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/seanzxg" target="_blank">
-          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        <a id="avatar" href="https://github.com/seanzxg" target="_blank" rel="external nofollow noopener noreferrer">
+          <img class="img-circle img-rotate" src="http://cdn.rainmar.com/rp/avatar.jpg?imageView2/0/w/100" width="200" height="200">
         </a>
-        <h2 id="name" class="hidden-xs hidden-sm">小光 Sean</h2>
+        <h2 id="name" class="hidden-xs hidden-sm">小光</h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Father of XuanXuan</h3>
         <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Beijing, China</small>
       </div>
@@ -67,7 +71,7 @@
 
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
             </span>
@@ -77,7 +81,7 @@
   <div class="ins-search-mask"></div>
   <div class="ins-search-container">
     <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech>
       <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
     <div class="ins-section-wrapper">
@@ -139,6 +143,16 @@
         </li>
         
         
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
         <li class="menu-item menu-item-about">
           <a href="/about">
             
@@ -153,9 +167,11 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" rel="external nofollow noopener noreferrer"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss"><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
@@ -172,7 +188,7 @@
     <div class="widget-body">
         <div id="board">
             <div class="content">
-                <p>欢迎大家进行学习交流~</p>
+                <p>欢迎交流与分享经验!</p>
             </div>
         </div>
     </div>
@@ -231,7 +247,7 @@
                 <a class="category-link" href="/categories/git/">git</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabec50000n3jbbt0jbns6/" class="title">Git操作锦集</a>
+                <a href="/ckdpmt7470001uajb5zet0huo.html" class="title">Git操作锦集</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-08-06T15:14:08.083Z" itemprop="datePublished">2020-08-06</time>
@@ -246,7 +262,7 @@
                 <a class="category-link" href="/categories/git/">git</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecg0007n3jb3ynzc453/" class="title">git常用命令清单</a>
+                <a href="/ckdpmt74f000auajb6h336p7r.html" class="title">git常用命令清单</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-08-06T03:21:24.000Z" itemprop="datePublished">2020-08-06</time>
@@ -261,7 +277,7 @@
                 <a class="category-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecj000dn3jbbsz4c14b/" class="title">微信网页调整字体大小导致页面错乱</a>
+                <a href="/ckdpmt74j000juajbf62j10er.html" class="title">微信网页调整字体大小导致页面错乱</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-01-19T05:56:46.000Z" itemprop="datePublished">2020-01-19</time>
@@ -276,7 +292,7 @@
                 <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabech000bn3jb3qaa4a9m/" class="title">nodejs中require的加载规则</a>
+                <a href="/ckdpmt74h000euajb9yfe5acz.html" class="title">nodejs中require的加载规则</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-12-23T07:39:16.000Z" itemprop="datePublished">2019-12-23</time>
@@ -291,7 +307,7 @@
                 <a class="category-link" href="/categories/linux/">linux</a>
               </p>
               <p class="item-title">
-                <a href="/ckdoabecl000gn3jb6k4pfo0r/" class="title">搭建一个自己的npm仓库</a>
+                <a href="/ckdpmt74h000guajbcmkxbie1.html" class="title">搭建一个自己的npm仓库</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-11-21T08:32:42.000Z" itemprop="datePublished">2019-11-21</time>
@@ -314,7 +330,7 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本名词"><span class="toc-number">1.</span> <span class="toc-text">基本名词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git配置"><span class="toc-number">2.</span> <span class="toc-text">Git配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建git库"><span class="toc-number">3.</span> <span class="toc-text">新建git库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缓存区增、删"><span class="toc-number">4.</span> <span class="toc-text">缓存区增、删</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码提交"><span class="toc-number">5.</span> <span class="toc-text">代码提交</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#远程操作"><span class="toc-number">6.</span> <span class="toc-text">远程操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#撤销"><span class="toc-number">7.</span> <span class="toc-text">撤销</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#缓存区"><span class="toc-number">7.1.</span> <span class="toc-text">缓存区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作区"><span class="toc-number">7.2.</span> <span class="toc-text">工作区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地仓库"><span class="toc-number">7.3.</span> <span class="toc-text">本地仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支"><span class="toc-number">8.</span> <span class="toc-text">分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标签"><span class="toc-number">9.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看"><span class="toc-number">10.</span> <span class="toc-text">查看</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#不怎么用"><span class="toc-number">10.1.</span> <span class="toc-text">不怎么用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#暂存"><span class="toc-number">11.</span> <span class="toc-text">暂存</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%90%8D%E8%AF%8D"><span class="toc-number">1.</span> <span class="toc-text">基本名词</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">Git配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%BB%BAgit%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text">新建git库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%8C%BA%E5%A2%9E%E3%80%81%E5%88%A0"><span class="toc-number">4.</span> <span class="toc-text">缓存区增、删</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4"><span class="toc-number">5.</span> <span class="toc-text">代码提交</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9C"><span class="toc-number">6.</span> <span class="toc-text">远程操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%92%A4%E9%94%80"><span class="toc-number">7.</span> <span class="toc-text">撤销</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E5%8C%BA"><span class="toc-number">7.1.</span> <span class="toc-text">缓存区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8C%BA"><span class="toc-number">7.2.</span> <span class="toc-text">工作区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="toc-number">7.3.</span> <span class="toc-text">本地仓库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-number">8.</span> <span class="toc-text">分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-number">9.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B"><span class="toc-number">10.</span> <span class="toc-text">查看</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%80%8E%E4%B9%88%E7%94%A8"><span class="toc-number">10.1.</span> <span class="toc-text">不怎么用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9A%82%E5%AD%98"><span class="toc-number">11.</span> <span class="toc-text">暂存</span></a></li></ol>
     </nav>
   </div>
 </aside>
@@ -336,7 +352,7 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/ckdoabecg0007n3jb3ynzc453/" class="article-date">
+	<a href="/ckdpmt74f000auajb6h336p7r.html" class="article-date">
 	  <time datetime="2020-08-06T03:21:24.000Z" itemprop="datePublished">2020-08-06</time>
 	</a>
 </span>
@@ -349,19 +365,14 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/git/" rel="tag">git</a>
+	<a class="article-tag-link-link" href="/tags/git/" rel="tag">git</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ckdoabecg0007n3jb3ynzc453/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/ckdpmt74f000auajb6h336p7r.html#comments" class="article-comment-link">评论</a></span>
         
-	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2k(字)</span>
-	
-	
-
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
@@ -375,11 +386,11 @@
 <li>Repository：仓库区（或本地仓库）</li>
 <li>Remote：远程仓库</li>
 </ul>
-<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有的配置以及它们所在的文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --list --show-origin</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置用户信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name <span class="string">"John Doe"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email johndoe@example.com</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检查配置信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --list</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编辑Git配置文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config -e [--global]</span></span><br></pre></td></tr></table></figure>
+<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 所有的配置以及它们所在的文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --list --show-origin</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置用户信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name <span class="string">&quot;John Doe&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email johndoe@example.com</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检查配置信息</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --list</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 编辑Git配置文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config -e [--global]</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h2 id="新建git库"><a href="#新建git库" class="headerlink" title="新建git库"></a>新建git库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 在当前目录新建一个Git代码库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [dir]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git init [project-name]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 远程把项目克隆下来，包含项目和整个历史代码 [dir]指定目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> [url] [dir]</span></span><br></pre></td></tr></table></figure>
+<h2 id="新建git库"><a href="#新建git库" class="headerlink" title="新建git库"></a>新建git库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 在当前目录新建一个Git代码库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> [dir]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新建一个目录，将其初始化为Git代码库</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git init [project-name]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 远程把项目克隆下来，包含项目和整个历史代码 [dir]指定目录</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> [url] [dir]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
@@ -405,9 +416,9 @@
 
 <h2 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 显示有变更的文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git status</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示当前分支的版本历史</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示暂存区和工作区的差异</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示工作区/缓存区与当前分支最新commit之间的差异</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff HEAD</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示暂存区和上一个commit的差异</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff --cached [file]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示两次提交之间的差异</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff [first-branch]...[second-branch]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示commit历史，以及每次commit发生变更的文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> --<span class="built_in">stat</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示指定文件相关的每一次diff</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -p [file]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 搜索提交历史，根据关键词</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> --grep change</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 我理解为最近做的操作</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git reflog</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某个文件的版本历史，包括文件改名</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> --follow [file]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git whatchanged [file]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示过去5次提交</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -5 --pretty --oneline</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示指定文件是什么人在什么时间修改过</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git blame [file]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某次提交的元数据和内容变化</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git show [commit]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某次提交发生变化的文件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git show --name-only [commit]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某次提交时，某个文件的内容</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git show [commit]:[filename]</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="不怎么用"><a href="#不怎么用" class="headerlink" title="不怎么用"></a>不怎么用</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 搜索提交历史，根据关键词（试了不好用）</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -S [keyword]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某个commit之后的所有变动，每个commit占据一行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某个commit之后的所有变动，其<span class="string">"提交说明"</span>必须符合搜索条件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> [tag] HEAD --grep feature</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示所有提交过的用户，按提交次数排序</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git shortlog -sn</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示今天你写了多少行代码</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff --shortstat <span class="string">"@&#123;0 day ago&#125;"</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="不怎么用"><a href="#不怎么用" class="headerlink" title="不怎么用"></a>不怎么用</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 搜索提交历史，根据关键词（试了不好用）</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -S [keyword]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某个commit之后的所有变动，每个commit占据一行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示某个commit之后的所有变动，其<span class="string">&quot;提交说明&quot;</span>必须符合搜索条件</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> [tag] HEAD --grep feature</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示所有提交过的用户，按提交次数排序</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git shortlog -sn</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 显示今天你写了多少行代码</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff --shortstat <span class="string">&quot;@&#123;0 day ago&#125;&quot;</span></span></span><br></pre></td></tr></table></figure>
 
-<h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 存储工作区</span></span><br><span class="line">git stash</span><br><span class="line"><span class="meta">#</span><span class="bash"> 存储工作区并添加备注内容</span></span><br><span class="line">git stash save 'development'</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看已贮藏区列表</span></span><br><span class="line">git stash list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 应用最新贮藏的内容(应用后不删除该贮藏)</span></span><br><span class="line">git stash apply</span><br><span class="line"><span class="meta">#</span><span class="bash"> 应用最新贮藏的内容(应用后该贮藏的内容会被删除！)</span></span><br><span class="line">git stash pop</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除最新贮藏的内容</span></span><br><span class="line">git stash drop</span><br><span class="line"><span class="meta">#</span><span class="bash"> 都可以指定操作任意一个已贮藏的内容，只需要在后面跟入stash@&#123;1&#125;索引，输入git stash list 查看索引</span></span><br><span class="line">git stash apply git stash pop git stash drop</span><br></pre></td></tr></table></figure>
+<h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 存储工作区</span></span><br><span class="line">git stash</span><br><span class="line"><span class="meta">#</span><span class="bash"> 存储工作区并添加备注内容</span></span><br><span class="line">git stash save &#x27;development&#x27;</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看已贮藏区列表</span></span><br><span class="line">git stash list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 应用最新贮藏的内容(应用后不删除该贮藏)</span></span><br><span class="line">git stash apply</span><br><span class="line"><span class="meta">#</span><span class="bash"> 应用最新贮藏的内容(应用后该贮藏的内容会被删除！)</span></span><br><span class="line">git stash pop</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除最新贮藏的内容</span></span><br><span class="line">git stash drop</span><br><span class="line"><span class="meta">#</span><span class="bash"> 都可以指定操作任意一个已贮藏的内容，只需要在后面跟入stash@&#123;1&#125;索引，输入git stash list 查看索引</span></span><br><span class="line">git stash apply git stash pop git stash drop</span><br></pre></td></tr></table></figure>
 
 
       
@@ -418,12 +429,11 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://rainmar.com/ckdoabecg0007n3jb3ynzc453/" title="git常用命令清单" target="_blank" rel="external">http://rainmar.com/ckdoabecg0007n3jb3ynzc453/</a>
+      <a href="rainmar.com/ckdpmt74f000auajb6h336p7r.html" title="git常用命令清单" target="_blank" rel="external">rainmar.com/ckdpmt74f000auajb6h336p7r.html</a>
     </li>
     
     <li class="post-copyright-license">
-      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh"
-        target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external nofollow noopener noreferrer">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
     </li>
   </ul>
 </blockquote>
@@ -433,20 +443,18 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="https://github.com/seanzxg" target="_blank" class="img-burn thumb-sm visible-lg">
-          <img src="/images/avatar.jpg"
-            class="img-rounded w-full" alt="">
+        <a href="https://github.com/seanzxg" target="_blank" class="img-burn thumb-sm visible-lg" rel="external nofollow noopener noreferrer">
+          <img src="http://cdn.rainmar.com/rp/avatar.jpg?imageView2/0/w/100" class="img-rounded w-full" alt>
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/seanzxg" target="_blank"><span
-              class="text-dark">小光 Sean</span><small class="ml-1x">Web Developer &amp; Father of XuanXuan</small></a>
-        </h3>
+        <h3 class="media-heading"><a href="https://github.com/seanzxg" target="_blank" rel="external nofollow noopener noreferrer"><span class="text-dark">小光</span><small class="ml-1x">Web Developer &amp; Father of XuanXuan</small></a></h3>
         <div>保持初心，学习、成长、厚积、薄发。</div>
       </div>
     </figure>
   </div>
 </div>
+
 
     </div>
   </article>
@@ -468,12 +476,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/ckdoabec50000n3jbbt0jbns6/" title="Git操作锦集"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/ckdpmt7470001uajb5zet0huo.html" title="Git操作锦集"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/ckdoabecj000dn3jbbsz4c14b/" title="微信网页调整字体大小导致页面错乱"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/ckdpmt74j000juajbf62j10er.html" title="微信网页调整字体大小导致页面错乱"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
@@ -505,18 +513,18 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/seanzxg" target="_blank" title="Github" rel="external nofollow noopener noreferrer"><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        <li><a href="http://weibo.com/seanzxg" target="_blank" title="Weibo" rel="external nofollow noopener noreferrer"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss"><i class="icon icon-rss"></i></a></li>
         
     </ul>
 
     <div class="copyright">
     	
-        &copy; 2020 John Doe
-        
         <div class="publishby">
-            
+        	Theme by <a href="https://github.com/cofess" target="_blank" rel="external nofollow noopener noreferrer"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank" rel="external nofollow noopener noreferrer">pure</a>.
         </div>
     </div>
 </footer>
@@ -524,8 +532,12 @@
 <script>
 window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
+
 <script src="/js/plugin.min.js"></script>
+
+
 <script src="/js/application.js"></script>
+
 
     <script>
 (function (window) {
@@ -543,7 +555,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
+
 <script src="/js/insight.js"></script>
+
 
 
 
