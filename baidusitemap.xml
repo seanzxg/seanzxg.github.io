@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.rainmar.com/list-of-commonly-used-git-commands.html</loc>
+    <lastmod>2020-08-12</lastmod>
+  </url>
+  <url>
+    <loc>www.rainmar.com/git-operation-highlights.html</loc>
+    <lastmod>2020-08-12</lastmod>
+  </url>
+  <url>
     <loc>www.rainmar.com/adjusting-the-font-size-of-wechat-webpage-causes-page-to-be-messy.html</loc>
     <lastmod>2020-08-11</lastmod>
   </url>
@@ -17,15 +25,7 @@
     <lastmod>2020-08-11</lastmod>
   </url>
   <url>
-    <loc>www.rainmar.com/git-operation-highlights.html</loc>
-    <lastmod>2020-08-11</lastmod>
-  </url>
-  <url>
     <loc>www.rainmar.com/hexo-blogbuild.html</loc>
-    <lastmod>2020-08-11</lastmod>
-  </url>
-  <url>
-    <loc>www.rainmar.com/list-of-commonly-used-git-commands.html</loc>
     <lastmod>2020-08-11</lastmod>
   </url>
   <url>

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.rainmar.com/list-of-commonly-used-git-commands.html</loc>
+    
+    <lastmod>2020-08-12T07:39:24.563Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.rainmar.com/git-operation-highlights.html</loc>
+    
+    <lastmod>2020-08-12T02:28:42.810Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.rainmar.com/tags/</loc>
     
     <lastmod>2020-08-11T10:12:25.103Z</lastmod>
@@ -58,23 +72,9 @@
   </url>
   
   <url>
-    <loc>www.rainmar.com/git-operation-highlights.html</loc>
-    
-    <lastmod>2020-08-11T10:07:23.864Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>www.rainmar.com/hexo-blogbuild.html</loc>
     
     <lastmod>2020-08-11T10:07:23.864Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.rainmar.com/list-of-commonly-used-git-commands.html</loc>
-    
-    <lastmod>2020-08-11T10:07:23.846Z</lastmod>
     
   </url>
   
