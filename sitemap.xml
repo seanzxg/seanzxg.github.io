@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>www.rainmar.com/list-of-commonly-used-git-commands.html</loc>
+    <loc>www.rainmar.com/about/</loc>
     
-    <lastmod>2020-08-12T07:39:24.563Z</lastmod>
+    <lastmod>2020-09-09T02:05:52.819Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.rainmar.com/dom-system-learning.html</loc>
+    
+    <lastmod>2020-08-31T02:33:27.057Z</lastmod>
     
   </url>
   
   <url>
     <loc>www.rainmar.com/git-operation-highlights.html</loc>
     
-    <lastmod>2020-08-12T02:28:42.810Z</lastmod>
+    <lastmod>2020-08-13T06:59:02.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.rainmar.com/list-of-common-git-commands.html</loc>
+    
+    <lastmod>2020-08-12T07:39:24.563Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>www.rainmar.com/tags/</loc>
     
     <lastmod>2020-08-11T10:12:25.103Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.rainmar.com/about/</loc>
-    
-    <lastmod>2020-08-11T10:12:25.102Z</lastmod>
     
   </url>
   
